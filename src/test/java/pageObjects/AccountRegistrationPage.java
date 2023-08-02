@@ -20,19 +20,18 @@ public class AccountRegistrationPage extends BasePage {
     @FindBy(name = "email")
     WebElement txtEmail;
 
-    @FindBy(name = "telephone")
-    WebElement txtTelephone;
 
     @FindBy(name = "password")
     WebElement txtPassword;
 
-    @FindBy(name = "confirm")
+    @FindBy(xpath = "//button[normalize-space()='Continue']")
     WebElement txtConfirmPassword;
+
 
     @FindBy(name = "agree")
     WebElement chkdPolicy;
 
-    @FindBy(xpath = "//input[@value='Continue']")
+    @FindBy(xpath = "//button[normalize-space()='Continue']")
     WebElement btnContinue;
 
     @FindBy(xpath = "//h1[normalize-space()='Your Account Has Been Created!']")
@@ -53,10 +52,6 @@ public class AccountRegistrationPage extends BasePage {
 
     }
 
-    public void setTelephone(String tel) {
-        txtTelephone.sendKeys(tel);
-
-    }
 
     public void setPassword(String pwd) {
         txtPassword.sendKeys(pwd);
