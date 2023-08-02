@@ -10,13 +10,19 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
     @Test
     public void test_account_Registration() throws InterruptedException
     {
+        logger.debug("application logs.....");
+        logger.info("*** Starting TC_001_AccountRegistrationTest ***");
         try
         {
             HomePage hp=new HomePage(driver);
             hp.clickMyAccount();
+            logger.info("Clicked on My Account link");
+
             hp.clickRegister();
+            logger.info("Clicked on Register link");
 
             AccountRegistrationPage regpage=new AccountRegistrationPage(driver);
+            logger.info("Providing customer data");
 
             regpage.setFirstName(randomeString().toUpperCase());
 
@@ -32,15 +38,20 @@ public class TC_001_AccountRegistrationTest extends BaseClass{
             regpage.setPrivacyPolicy();
 
             regpage.clickContinue();
+            logger.info("Clicked on Continue");
 
             String confmsg=regpage.getConfirmationMsg();
 
-            Assert.assertEquals(confmsg, "Your Account Has Been Created!");
+            logger.info("Validating expected message");
+            Assert.assertEquals(confmsg, "Your Account Has Been Created!","Test failed");
         }
         catch(Exception e)
         {
+            logger.error("Test failed");
             Assert.fail();
         }
+
+        logger.info("*** Finished TC_001_AccountRegistrationTest ***");
     }
 
 
