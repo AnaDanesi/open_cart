@@ -6,6 +6,8 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
@@ -13,6 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;  // logging
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
@@ -22,17 +25,25 @@ public class BaseClass {
 
 
     @BeforeClass
-    public void setup()
+    @Parameters("browser")
+    public void setup(String br)
     {
 
         logger=LogManager.getLogger(this.getClass());  //logging
 
-        ChromeOptions options=new ChromeOptions();
-        options.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
+        //ChromeOptions options=new ChromeOptions();
+        //options.setExperimentalOption("excludeSwitches",new String[] {"enable-automation"});
 
-        WebDriverManager.chromedriver().setup();
-        options.addArguments("--remote-allow-origins=*");
-        driver=new ChromeDriver(options);
+        if (br.equals("chrome")) {
+            driver=new ChromeDriver();
+        }
+        else if(br.equals("edge")) {
+            driver=new EdgeDriver();
+        }
+        else {
+            driver=new FirefoxDriver();
+        }
+
 
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
