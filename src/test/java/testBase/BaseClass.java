@@ -26,7 +26,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public Logger logger; // for logging
 
@@ -94,7 +94,7 @@ public class BaseClass {
 
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        String destination = System.getProperty("user.dir") + "\\screenshots\\" + tname + "_" + timeStamp + ".png";
+        String destination = System.getProperty("user.dir") + "/screenshots/" + tname + "_" + timeStamp + ".png";
 
         try {
             FileUtils.copyFile(source, new File(destination));
