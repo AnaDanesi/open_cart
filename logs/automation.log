@@ -115,3 +115,15 @@
 11:27:04.829 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Continue
 11:27:14.234 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
 11:27:14.893 [TestNG-tests-2] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+16:51:00.020 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+16:51:00.103 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My Account link
+16:51:00.888 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Register link
+16:51:00.890 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+16:51:01.233 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Continue
+16:51:11.269 [TestNG-tests-1] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+16:52:08.848 [main] INFO  testCases.TC_001_AccountRegistrationTest - *** Starting TC_001_AccountRegistrationTest ***
+16:52:08.912 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My Account link
+16:52:09.423 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Register link
+16:52:09.424 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
+16:52:09.749 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Continue
+16:52:19.802 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
