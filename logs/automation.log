@@ -175,3 +175,8 @@
 17:46:25.432 [main] INFO  testCases.TC_001_AccountRegistrationTest - Providing customer data
 17:46:25.755 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Continue
 17:46:35.791 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating expected message
+10:01:23.605 [main] INFO  testCases.TC_002_LoginTest - Starting TC_002_LoginTest
+10:14:05.889 [main] INFO  testCases.TC_002_LoginTest - *** Starting TC_002_LoginTest ****
+10:14:05.952 [main] INFO  testCases.TC_002_LoginTest - Clicked on My account
+10:14:06.178 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login Link
+10:14:06.179 [main] INFO  testCases.TC_002_LoginTest - Providing login details
