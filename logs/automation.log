@@ -180,3 +180,13 @@
 10:14:05.952 [main] INFO  testCases.TC_002_LoginTest - Clicked on My account
 10:14:06.178 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login Link
 10:14:06.179 [main] INFO  testCases.TC_002_LoginTest - Providing login details
+17:07:49.809 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:08:00.423 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:08:11.015 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:08:21.798 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:08:32.314 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:09:18.190 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:09:28.824 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:09:39.317 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:09:50.517 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
+17:10:01.081 [main] INFO  testCases.TC_003_LoginDataDrivenTest - *** Starting TC_003_LoginDataDrivenTest ***
