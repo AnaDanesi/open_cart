@@ -8,7 +8,8 @@
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <!-- <class name="testCases.TC_001_AccountRegistrationtTest"/> -->
-            <class name="testCases.TC_002_LoginTest"/>
+            <!-- <class name="testCases.TC_002_LoginTest"/> -->
+            <class name="testCases.TC_003_LoginDataDrivenTest"/>
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
