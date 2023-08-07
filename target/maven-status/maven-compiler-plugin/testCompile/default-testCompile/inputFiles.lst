@@ -1,0 +1,12 @@
+/home/anita/workspace/open_cart/src/test/java/testBase/BaseClass.java
+/home/anita/workspace/open_cart/src/test/java/pageObjects/BasePage.java
+/home/anita/workspace/open_cart/src/test/java/pageObjects/MyAccountPage.java
+/home/anita/workspace/open_cart/src/test/java/pageObjects/HomePage.java
+/home/anita/workspace/open_cart/src/test/java/utilities/ExcelUtility.java
+/home/anita/workspace/open_cart/src/test/java/testCases/TC_003_LoginDataDrivenTest.java
+/home/anita/workspace/open_cart/src/test/java/pageObjects/LoginPage.java
+/home/anita/workspace/open_cart/src/test/java/testCases/TC_002_LoginTest.java
+/home/anita/workspace/open_cart/src/test/java/testCases/TC_001_AccountRegistrationTest.java
+/home/anita/workspace/open_cart/src/test/java/pageObjects/AccountRegistrationPage.java
+/home/anita/workspace/open_cart/src/test/java/utilities/ExtentReportManager.java
+/home/anita/workspace/open_cart/src/test/java/utilities/DataProviders.java
