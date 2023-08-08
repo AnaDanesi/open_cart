@@ -24,6 +24,7 @@ public class LoginPage extends BasePage {
         txtEmailAddress.sendKeys(email);
     }
 
+
     public void setPassword(String pwd) {
         txtPassword.sendKeys(pwd);
     }
