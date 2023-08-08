@@ -68,7 +68,7 @@ public class CheckOutPage extends BasePage {
     @FindBy(xpath="//*[@id='content']/h1")
     WebElement lblOrderConMsg;
 
-    public void setFirstName(String firstName) {
+    public void setfirstName(String firstName) {
         txtfirstName.sendKeys(firstName);
     }
 
