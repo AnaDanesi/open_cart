@@ -64,14 +64,14 @@ public class TC_006_EndToEndTest extends BaseClass {
 
 
         //search & add product to cart
-        hp.enterProductName("iPhone");
+        hp.enterProductName("Palm Treo Pro");
         hp.clickSearch();
 
         SearchPage sp=new SearchPage(driver);
 
-        if(sp.isProductExist("iPhone"))
+        if(sp.isProductExist("Palm Treo Pro"))
         {
-            sp.selectProduct("iPhone");
+            sp.selectProduct("Palm Treo Pro");
             sp.setQuantity("2");
             sp.addToCart();
 
@@ -88,7 +88,7 @@ public class TC_006_EndToEndTest extends BaseClass {
         Thread.sleep(3000);
         String totprice=sc.getTotalPrice();
         System.out.println("total price is shopping cart: "+totprice);
-        myassert.assertEquals(totprice, "$246.40");   //validation
+        myassert.assertEquals(totprice, "$675.98");   //validation
         sc.clickOnCheckout(); //navigate to checkout page
         Thread.sleep(3000);
 
@@ -104,13 +104,13 @@ public class TC_006_EndToEndTest extends BaseClass {
         Thread.sleep(1000);
         ch.setaddress2("address2");
         Thread.sleep(1000);
-        ch.setcity("Delhi");
+        ch.setcity("Buenos Aires");
         Thread.sleep(1000);
-        ch.setpin("500070");
+        ch.setpin("1425");
         Thread.sleep(1000);
-        ch.setCountry("India");
+        ch.setCountry("Argentina");
         Thread.sleep(1000);
-        ch.setState("Delhi");
+        ch.setState("Buenos Aires");
         Thread.sleep(1000);
         ch.clickOnContinueAfterBillingAddress();
         Thread.sleep(1000);
@@ -127,7 +127,7 @@ public class TC_006_EndToEndTest extends BaseClass {
 
         String total_price_inOrderPage=ch.getTotalPriceBeforeConfOrder();
         System.out.println("total price in confirmed order page:"+total_price_inOrderPage);
-        myassert.assertEquals(total_price_inOrderPage, "$207.00"); //validation
+        myassert.assertEquals(total_price_inOrderPage, "$564.98"); //validation
 
         //Below code works ony if you configure SMTP for emails
 	/*ch.clickOnConfirmOrder();
